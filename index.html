@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween || Parallax Effect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <img src="img/bg.jpg" id = "bg" alt="">
+        <img src="img/bats.png" id = "bats" alt="">
+        <img src="img/castle.png" id = "castle" alt="">
+        <img src="img/img.png" id = "img" alt="">
+        <img src="img/wolf.png" id="wolf" alt="">
+    </section>
+    <div class="sec">
+        <div class="content">
+            <h2>Happy Halloween!</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi aperiam accusamus perferendis, quos quisquam harum id praesentium earum sequi! Necessitatibus nulla suscipit ea molestias perferendis nemo, eligendi tenetur, adipisci, iure cupiditate veniam. Modi inventore voluptas culpa ea numquam accusamus ipsum quaerat temporibus qui aliquid obcaecati laborum, rem quas ab fugit ratione assumenda earum aspernatur nostrum, perferendis nulla labore a minima fugiat. Illo nisi eius ex, atque adipisci unde quia totam quaerat. Exercitationem itaque, veritatis a accusamus, sequi ipsam cumque modi esse odio fuga consequuntur veniam illo molestiae quidem beatae asperiores distinctio labore qui maxime officia. Cumque, dolore magni repellat voluptatem reprehenderit iure adipisci non, rem illo accusantium, atque minima earum corporis praesentium laboriosam voluptas voluptates asperiores ad nisi impedit neque quidem repellendus nostrum? Quas obcaecati cumque libero reiciendis tempore repudiandae corporis, aliquid impedit distinctio eum ab dignissimos vero praesentium neque debitis dicta ipsa quam magnam necessitatibus ipsam facilis, est fuga! Repudiandae provident enim eum qui nesciunt quas distinctio obcaecati sed ad in modi fuga non dolor, labore quo. Atque assumenda, vero, id facere fugit culpa ab dolor pariatur velit ipsa animi? Illo, distinctio. Quaerat consectetur dicta, delectus dolorum, voluptatem excepturi voluptatibus aut sit, omnis nam suscipit. Quod consectetur reprehenderit harum reiciendis ab repellendus laudantium. Totam dolorem molestias vitae quibusdam odio magnam praesentium dicta pariatur. Aliquid repellendus maiores aliquam voluptatem odio error quisquam cum doloribus ex laudantium vero dicta voluptates, veniam dolore recusandae veritatis iure, quaerat facere officia? Sunt id consectetur asperiores ipsam ex modi. Exercitationem magnam perferendis optio in officia, ratione similique dolores culpa alias iusto, nemo dolorum blanditiis ullam itaque ea qui officiis sunt necessitatibus error neque quos distinctio rem inventore quo. Libero ipsam autem necessitatibus fuga numquam nam sed, dolores nesciunt, dolorum suscipit unde doloremque non provident. Autem voluptatem velit molestiae eos eum voluptatibus perspiciatis harum nisi modi!</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to("#img", {
+            scrollTrigger: {
+                scrub:0.5,
+            },
+            x: 1500,
+            y: 500     
+        })
+
+        gsap.from("#wolf", {
+            scrollTrigger: {
+                scrub:0.5,
+            },
+            x: 400     
+        })
+        gsap.from("#castle", {
+            scrollTrigger: {
+                scrub:0.5,
+            },
+            x: -100     
+        })
+        gsap.to("#bats", {
+            scrollTrigger: {
+                scrub:0.5,
+            },
+            scale: 1.5,     
+        })
+    </script>
+</body>
+</html>
